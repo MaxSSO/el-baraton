@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import { Container } from 'reactstrap'
 import Header from './components/dumb/header'
+import WelcomeSign from './components/dumb/welcome-sign'
 import ShoppingCart from './components/containers/shopping-cart'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -25,9 +27,10 @@ class App extends Component {
           itemsCount={2} 
           isOpen={this.state.isShoppingCartVisible} 
           onClickBtnShoppingCart={this.toggleIsShoppingCartVisible} />
-        <div className="container" style={{backgroundColor: 'lightgreen', width: '100%', height: '100%', paddingTop: 56}}>
+        <Container style={{backgroundColor: 'lightgreen', width: '100%', height: '100%', paddingTop: 56}}>
+          <WelcomeSign msm="Sigue y disfruta de nuestros productos" />
           <ShoppingCart visible={this.state.isShoppingCartVisible} />
-        </div>
+        </Container>
       </div>
     )
   }
