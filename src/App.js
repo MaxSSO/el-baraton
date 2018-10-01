@@ -1,20 +1,31 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react'
+import { Button } from 'reactstrap'
+
+import ShoppingCart from './components/containers/shopping-cart'
 import './App.css';
 
 class App extends Component {
+  state = {
+    shoppingCartVisible: false
+  }
+  showShoppingCart = () => {
+    this.setState({shoppingCartVisible: true})
+  }
+
+  hideShoppingCart = () => {
+    this.setState({shoppingCartVisible: false})
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="container" style={{backgroundColor: 'gray', width: '100%', height: '100%'}}>
+        App
+        <br />
+        <Button onClick={this.showShoppingCart}>mostrar carrito!</Button>
+        <Button onClick={this.hideShoppingCart}>ocultar carrito!</Button>
+        <ShoppingCart visible={this.state.shoppingCartVisible} />
       </div>
-    );
+    )
   }
 }
 
