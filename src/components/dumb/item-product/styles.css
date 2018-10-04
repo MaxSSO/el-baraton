@@ -1,0 +1,43 @@
+:local(.container) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  width: 170px;
+  height: 170px;
+  background-color: rgb(165, 187, 216);
+  background-size: cover;
+}
+  
+:local(.label) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  /* background-color: lightyellow; */
+}
+
+:local(.light) {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+:local(.price) {
+	padding: 0 5px;
+	color: rgb(70, 70, 70);
+  background-color: yellow
+}
+
+:local(.info) {
+	padding: 5px;
+	color: rgb(60, 60, 60);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+:local(.info p) {
+	margin: 0;
+	line-height: 1em;
+}
+  

@@ -1,0 +1,33 @@
+:local(.container) {
+	padding: 10px;
+	background-color: white;
+}
+
+:local(.header) {
+	/* border-bottom: solid 2px gray; */
+	/* padding-bottom: 10px; */
+}
+
+:local(.body) {
+	padding: 10px 0;
+}
+
+:local(.footer) {
+	/* border-top: solid 2px lightgray; */
+	/* padding-top: 10px; */
+}
+
+:local(.subcategories) {
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+:local(.products) {
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+:local(.product) {
+	display: inline-block;
+	margin-left: 3px;
+}
