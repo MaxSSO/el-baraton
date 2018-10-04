@@ -1,0 +1,25 @@
+:local(.sign) {
+  margin: 15px 0;
+  height: 350px;
+
+  background-color: lightgray;
+  background-image: url('../../../assets//images/wine.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+:local(.opacitylayer) {
+	display: flex;
+  justify-content: center;
+  align-content: center;
+	flex-direction: column;
+  
+  padding: 10px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+:local(.msmtxt) {
+  text-align: center;
+  color: white;
+}

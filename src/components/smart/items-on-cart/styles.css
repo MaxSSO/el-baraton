@@ -1,0 +1,8 @@
+:local(.header) {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+	padding: 10px 0;
+	border-bottom: solid 2px gray;
+	/* background-color: brown; */
+}
